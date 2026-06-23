@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WanderLens Travel Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-camera-retro"></i>
+<h3>WanderLens</h3>
+</div>
+
+<nav class="nav-menu">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#stories">Stories</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="nav-actions">
+
+<a href="#gallery" class="explore-btn">
+Explore Now
+</a>
+
+<button id="darkMode" aria-label="Dark Mode">
+🌙
+</button>
+
+<button class="menu-toggle" id="menuToggle">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+</div>
+
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="#home">Home</a>
+<a href="#gallery">Gallery</a>
+<a href="#destinations">Destinations</a>
+<a href="#stories">Stories</a>
+<a href="#contact">Contact</a>
+
+<a href="#gallery" class="mobile-explore">Explore Now</a>
+<button id="mobileDarkMode">🌙 Dark Mode</button>
+
+</div>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Collect Moments,<br>
+Not Things.
+</h1>
+
+<p>
+Discover The World's
+Most Breathtaking Destinations
+</p>
+
+<div class="hero-buttons">
+
+<a href="#gallery" class="primary-btn">
+View Gallery
+</a>
+
+</div>
+
+</section>
+
+
+<section class="destinations" id="destinations">
+
+<h2>Featured Destinations</h2>
+
+<div class="destination-grid">
+
+<div class="destination-card">
+<img src="images/maldives.jpg">
+<h3>Maldives</h3>
+</div>
+
+<div class="destination-card">
+<img src="images/paris.jpg">
+<h3>Paris</h3>
+</div>
+
+<div class="destination-card">
+<img src="images/bali beach.jpg">
+<h3>Bali</h3>
+</div>
+
+<div class="destination-card">
+<img src="images/tokyo.jpg">
+<h3>Tokyo</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="filters">
+
+<button class="filter-btn active" data-filter="all">All</button>
+
+<button class="filter-btn" data-filter="beach">Beaches</button>
+
+<button class="filter-btn" data-filter="mountain">Mountains</button>
+
+<button class="filter-btn" data-filter="city">Cities</button>
+
+<button class="filter-btn" data-filter="island">Islands</button>
+
+<button class="filter-btn" data-filter="waterfall">Waterfalls</button>
+
+</section>
+
+
+<section class="gallery" id="gallery">
+
+<h2>Travel Gallery</h2>
+
+<div class="gallery-grid">
+
+<div class="gallery-item beach">
+<img src="images/maldives.jpg">
+</div>
+
+<div class="gallery-item city">
+<img src="images/paris.jpg">
+</div>
+
+
+<div class="gallery-item beach">
+<img src="images/bali beach.jpg">
+</div>
+
+<div class="gallery-item city">
+<img src="images/tokyo.jpg">
+</div>
+
+<div class="gallery-item island">
+<img src="images/story3.jpg">
+</div>
+
+<div class="gallery-item mountain">
+<img src="images/mountain1.jpg">
+</div>
+
+<div class="gallery-item city">
+<img src="images/dubai.jpg">
+</div>
+
+<div class="gallery-item island">
+<img src="images/santorini.jpg">
+</div>
+
+
+<div class="gallery-item waterfall">
+<img src="images/beautiful-waterfall.jpg">
+</div>
+
+
+<div class="gallery-item mountain">
+<img src="images/mountain2.jpg">
+</div>
+
+<div class="gallery-item waterfall">
+<img src="images/waterfall.jpg">
+</div>
+
+
+<div class="gallery-item city">
+<img src="images/newyork.jpg">
+</div>
+
+<div class="gallery-item beach">
+<img src="images/beach.jpg">
+</div>
+
+<div class="gallery-item mountain">
+<img src="images/mountain3.jpg">
+</div>
+
+<div class="gallery-item waterfall">
+<img src="images/waterfall-lake-lagoon-mountains.jpg">
+</div>
+
+</div>
+
+</section>
+
+<div class="lightbox">
+
+<span class="close-btn">&times;</span>
+
+<button class="prev-btn">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<img class="lightbox-img" src="">
+
+<button class="next-btn">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+
+<section class="stats">
+
+<div class="stat-card">
+<h2 data-target="1500">0</h2>
+<p>Travel Photos</p>
+</div>
+
+<div class="stat-card">
+<h2 data-target="85">0</h2>
+<p>Countries</p>
+</div>
+
+<div class="stat-card">
+<h2 data-target="350">0</h2>
+<p>Destinations</p>
+</div>
+
+<div class="stat-card">
+<h2 data-target="25">0</h2>
+<p>Travelers</p>
+</div>
+
+</section>
+
+
+<section class="stories" id="stories">
+
+<div class="section-title">
+<h2>Travel Stories</h2>
+<p>Inspiring journeys from around the world</p>
+</div>
+
+<div class="story-grid">
+
+<div class="story-card">
+
+<img src="images/story1.jpg">
+
+<div class="story-content">
+<h3>Exploring Santorini</h3>
+<p>
+Experience breathtaking sunsets,
+whitewashed villages and crystal blue waters.
+</p>
+<a href="#">Read More</a>
+</div>
+
+</div>
+
+<div class="story-card">
+
+<img src="images/story2.jpg">
+
+<div class="story-content">
+<h3>Gems of Switzerland</h3>
+<p>
+Discover stunning alpine villages,
+snowy mountains and scenic train rides.
+</p>
+<a href="#">Read More</a>
+</div>
+
+</div>
+
+<div class="story-card">
+
+<img src="images/story3.jpg">
+
+<div class="story-content">
+<h3>Maldives Paradise</h3>
+<p>
+A tropical escape filled with luxury resorts,
+clear waters and unforgettable views.
+</p>
+<a href="#">Read More</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="testimonials">
+
+<div class="section-title">
+<h2>What Travelers Say</h2>
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+This gallery inspired my dream vacation.
+The design is beautiful and easy to explore.
+</p>
+
+<h4>Sara Sheikh</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+Amazing collection of destinations and
+stunning photography from around the world.
+</p>
+
+<h4>Ali Baloch</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+A great source of travel inspiration. The destinations, stories, and photo galleries are presented very nicely.
+
+</p>
+
+<h4>IQra Khan</h4>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="newsletter">
+
+<h2>Get Weekly Travel Inspiration</h2>
+
+<p>
+Subscribe to receive destination guides,
+travel tips and photography collections.
+</p>
+
+<form>
+
+<input
+type="email"
+placeholder="Enter your email" required>
+
+<button type="submit">
+Subscribe
+</button>
+
+</form>
+
+</section>
+
+
+<section class="instagram-section">
+
+<div class="section-title">
+<h2>Travel Moments</h2>
+</div>
+
+<div class="instagram-grid">
+
+<img src="images/insta1.jpg" loading="lazy">
+<img src="images/insta2.jpg"  loading="lazy">
+<img src="images/insta3.jpg" loading="lazy">
+<img src="images/insta4.jpg" loading="lazy">
+<img src="images/insta5.jpg" loading="lazy">
+<img src="images/insta6.jpg" loading="lazy">
+<img src="images/insta7.jpg" loading="lazy">
+<img src="images/insta8.jpg" loading="lazy">
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-box">
+
+<h3>WanderLens</h3>
+
+<p>
+Explore the world through beautiful
+travel photography and unforgettable destinations.
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<a href="#home">Home</a>
+<a href="#gallery">Gallery</a>
+<a href="#stories">Stories</a>
+<a href="#destinations">Destinations</a>
+<a href="#contact">Contact</a>
+
+</div>
+<div class="footer-box">
+
+<h3>Categories</h3>
+
+<a href="#gallery" onclick="filterGallery('beach')">Beaches</a>
+<a href="#gallery" onclick="filterGallery('mountain')">Mountains</a>
+<a href="#gallery" onclick="filterGallery('city')">Cities</a>
+<a href="#gallery" onclick="filterGallery('island')">Islands</a>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Follow Us</h3>
+
+<div class="social-icons">
+
+<a href="https://www.facebook.com" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.linkedin.com" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div class="copyright">
+© 2026 WanderLens Travel Gallery. Designed & Developed by Shazmeen Khan.
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
